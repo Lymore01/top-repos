@@ -5,7 +5,7 @@ const data = require("d:/CODING/Java/TopRepositories.json")
 
 require('dotenv').config()
 
-const Port = process.env.PORT ;
+const Port = process.env.PORT || 3000 ;
 
 app.get("/lymore/topRepositories", (req, res) => {
   res.json(data);
